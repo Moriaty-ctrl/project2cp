@@ -1,0 +1,11 @@
+[project]
+authors = ["Moriaty-ctrl <a_merzougui@estin.dz>"]
+channels = ["conda-forge"]
+name = "towing_app"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+gdal = ">=3.10.2,<4"
