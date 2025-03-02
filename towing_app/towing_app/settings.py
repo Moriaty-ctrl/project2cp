@@ -40,17 +40,16 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'api',
+    'fcm_django',
 ]
+FCM_DJANGO_SETTINGS = {
+    "FCM_SERVER_KEY": "BOA54C98O1JB569czLfw4DbfAYItMDHmEcSCpglbEi0MTg3Z-B5-0KHA1Q3Or8zKKZ_YXbypYcU1r5Q4FpncGTc",
+}
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
 }
-import os
-from django.contrib.gis.gdal import GDAL_LIBRARY_PATH
-
-os.environ['GDAL_LIBRARY_PATH'] = "C:/OSGeo4W64/bin/gdalXXX.dll"
-os.environ['GEOS_LIBRARY_PATH'] = "C:/OSGeo4W64/bin/geos_c.dll"
 
 AUTH_USER_MODEL = 'api.User'
 from datetime import timedelta

@@ -8,6 +8,7 @@ class User(AbstractUser):
         ('admin', 'Admin'),
     )
     role = models.CharField(max_length=20, choices=ROLE_CHOICES)
+    fcm_token = models.CharField(max_length=255, blank=True, null=True)  # Store FCM token
 
 class EmergencyRequest(models.Model):
     DRIVER = 'driver'
