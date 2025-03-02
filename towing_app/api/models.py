@@ -28,7 +28,7 @@ class EmergencyRequest(models.Model):
     problem_type = models.CharField(max_length=255)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
     created_at = models.DateTimeField(auto_now_add=True)
-
+    rejected_by = models.ManyToManyField(User, related_name="rejected_requests", blank=True)
     def __str__(self):
         return f"Request from {self.user.username} - {self.problem_type}"
 
