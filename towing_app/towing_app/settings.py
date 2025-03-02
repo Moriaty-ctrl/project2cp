@@ -54,6 +54,10 @@ import os
 
 STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY", "sk_test_51Qy7owP2XzqYQd6bDJ9IlGSImWYWUn7rWKbR3Uz9QnxLQ4LMDowIbtaQWlVscAbTtd5B5MaE9tNj110Tl2kGRSJH00Ethsyn0s")
 STRIPE_PUBLISHABLE_KEY = os.getenv("STRIPE_PUBLISHABLE_KEY", "pk_test_51Qy7owP2XzqYQd6bKDt66W73DcdJmpLHiv8fCQf3C9waJR0P9Ml5a3VHR8n4CTGh3sQUS8j7g4FevMHLniqjOYng00kADKgbZF")
+import os
+
+CHARGILY_API_KEY = os.getenv("CHARGILY_API_KEY", "test_pk_ztt3M5fYBcsFhXIblHPK3mCKKulB1Wl8fOjIByf8")
+CHARGILY_SECRET = os.getenv("CHARGILY_SECRET", "test_sk_V43kemSyVqymEOlVGXrsU4rEb2WVHlb8uY479Y4v")
 
 AUTH_USER_MODEL = 'api.User'
 from datetime import timedelta
